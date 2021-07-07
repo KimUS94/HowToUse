@@ -1,0 +1,35 @@
+# Directory move command
+    mv [sourceFolder] [destFolder]
+    mv [sourceFolder] [destFolder/]
+    mv [sourceFolder/] [destFolder]
+    mv [sourceFolder/] [destFolder/]
+
+# Delete command
+    # file
+        rm [fileName]
+        rm -f [fileName]
+    # folder
+        rm -r [dir/]
+        rm -rf [dir/]
+
+# Register env variables without (reboot & terminating session)
+    . ./.profile
+
+# Decompression command
+    sudo tar -xvf [compressedFileName]
+
+# Apt package update & install
+    sudo apt-get update    
+    sudo apt-get -y upgrade    
+    sudo apt update
+    sudo apt -y upgrade
+    sudo apt-get install <packageName>
+
+# Reboot
+    sudo systemctl reboot
+
+# etc
+    pwd
+    hostname -I
+    ifconfig
+    grep
