@@ -1,0 +1,21 @@
+# Build image
+docker build -t dummy-go:0.0.1 .
+
+# Taging image
+docker tag dummy-go:0.0.1 dmltjq2524/dummy-go:0.0.1
+
+# push DockerHub
+docker push dmltjq2524/dummy-go:0.0.1
+
+# Delete image + container
+docker rmi -f [image id]
+
+# Delete container
+docker rm [container id]
+
+(docker container ls -al) == (docker container ls -all)
+
+(docker container ls --all) != (docker container ls -all)
+
+docker run -dp 4000:9999 dmltjq2524/dummy-go:0.0.1
+=> (000.000.0.00:4000) or (http://000.000.0.00:4000)

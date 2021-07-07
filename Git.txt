@@ -1,0 +1,32 @@
+****************[git push]******************
+-> git init
+-> git add .
+-> git commit -m "commit msg"
+-> git remote add <name> <url>
+-> git push -u --force <name> <branchName>
+____________________________________________
+*******************[etc]********************
+-> git remote -v
+-> rm -rf .git
+-> git log
+-> git status
+____________________________________________
+******************[branch]******************
+# Create new branch
+-> git branch <branchName>
+
+# Check branch list
+-> git branch
+
+# Switching branches
+-> git checkout <branchName>
+-> git checkout -b <branchName> # checkout + create branch
+
+# Merging branches
+# - 1. CheckOut with the Branch you want to merge
+# - 2. Execute 'merge' command with target Branch as arguments
+# - ex). -> git checkout master
+#        -> git merge issue1
+#        -> git merge issue2
+-> git merge <branchName>
+

@@ -1,0 +1,21 @@
+kubectl get pods
+
+kubectl get pods -o wide
+
+kubectl get nodes
+
+kubectl describe nodes
+
+
+kubectl apply -f <*.yaml file path>
+
+kubectl delete -f <*.yaml file path>
+
+
+kubectl get svc
+kubectl get service
+
+kubectl get deployment
+
+# *.yaml NodePort -> 30001
+=> 000.000.0.00:30001
