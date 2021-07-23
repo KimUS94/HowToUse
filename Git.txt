@@ -1,4 +1,7 @@
 ****************[git push]******************
+-> git config --global user.name <user-name>
+-> git config ->global user.email <user-email>
+-> git config --list
 -> git init
 -> git add .
 -> git commit -m "commit msg"
