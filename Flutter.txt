@@ -1,0 +1,68 @@
+flutter tutorual git : https://github.com/VintageAppMaker/FlutterTutorial/blob/master/flutter_tutorial/first.md
+https://at0z.tistory.com/155
+
+
+
+* 기본적으로는 Data형을 선언해야 함(정적선언)
+   -> 그러나 var를 선언하고 값을 넣으면 자동으로 데이터형이 지정
+       한 번 지정된 변수는 데이터형을 변경할 수 없음
+
+* dynamic 형은 모든 데이터 형을 받을 수 있음
+   -> List<dynamic> list = [1, 2, 'a'];
+
+* int, double은 num type의 하위 집합
+
+* 상수 : final(런타임시 초기화), const(컴파일시 초기화)
+
+* 타입 검사
+   -> is를 사용
+   -> 변수] is [type] => 같은 타입인지[변수] is! [type] => 다른 타입인지
+
+* 형변환 (as)
+   -> type casting. as를 사용. 다른 타입끼리는 변환 불가. 상위 개념으로만 변환 가능
+   ->  int, double은 num으로 묶여있지만 각자는 관계가 없어 형변화 불가
+
+* 삼항 연산
+   -> [조건] ? [참일 때] : [거짓일 때]
+   -> var number = a%2 ? a++ : a--
+
+* 믹스인
+   -> mixin with를 사용하면 상속하지 않고 다른 클래스 기능 overwritte가능. 
+
+* 스프레드 연산자
+   -> var items = ['a', 'b', 'c'];
+   -> var items2 = ['d', ...items, 'e']; //d, a, b, c, e
+
+* 일급 객체
+   -> 함수를 값으로 취급. 즉, 다른 변수에 함수를 대입할 수 있음
+   -> void greeting(String text){ print(text); }
+   -> var f = greeting; ,,, f('hello');
+
+* for문과 forEach()함수
+   -> for : 외부 반복
+   -> forEach() : 내부반복 =>(E element) {} 형태의 함수를 인수로 받음.
+
+* where
+* any
+   -> 리스트에 특정 조건을 충족하는 요소가 있는지 없는지 검사할 때 사용하는 함수.
+
+* 컬렉션 if
+   -> 조건에 의해 컬렉션의 값을 조정하거나 다르게 사용하고 싶을 때 사용.
+   -> bool promoActive = true;
+   -> print([1, 2, 3, 4, 5, if (promoActive) 6]); // true일 때만 6이 추가됨
+
+* 컬렉션 for
+   -> 컬렉션 문법 안에서 for 문을 사용 가능.
+   -> var listOfInts = [1, 2, 3];	
+   -> var listOfStrings = [	
+   -> 	'#0',	
+   ->     for (var i in listOfInts) '#$i'	
+   -> ]; 	
+   -> //#0, #1, #2, #3
+
+* null 처리
+   -> 다트는 null을 처리할 수 있는 여러가지 방법을 제공. (Dart에서는 모든 것이 객체. int, double, bool 같은 타입들도 모두 객체라 null값을 가질 수도 있음.)
+   -> ?. 연산자를 사용하면 null 여부 파악 가능
+   -> print(name?.lentgh); //null출력
+   -> ??연산자는 객체가 null일 때 작동을 간단히 구현하는데 사용.
+   -> print(name?.length ?? 0); //name이 null이면 0을 출력

@@ -8,6 +8,9 @@
 -> git remote add <name> <url>
 -> git push -u --force <name> <branchName>
 ____________________________________________
+*****************[git pull]******************
+git pull https://github.com/KimUS94/HowToUse.git
+____________________________________________
 *******************[etc]********************
 -> git remote -v
 -> rm -rf .git
